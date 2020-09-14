@@ -1,0 +1,28 @@
+&__special__sale{
+    width: 100%;
+    padding: 0 2em;
+    margin: 2em 0 4em 0;
+    &__wrapper{
+        padding: 4em 2em 0 2em;
+        background: linear-gradient(to bottom right, rgba(109, 138, 201,0.8) 10%, rgba(65, 91, 145,0.9) 100%);
+        height: 60vh;
+        border-radius: 5px;
+    }
+    &__title{
+        line-height: 1.54;
+    }
+    &__description{
+        line-height: 1.2;
+    }
+    &__btn{
+        border: 1px solid rgba(255,255,255,0.6);
+        color: white;
+        background: none;
+        border-radius: 5px;
+        padding: 1.5em 6em;
+        &:hover{
+            cursor: pointer;
+            background: rgba(0,0,0,0.2);
+        }
+    }
+}

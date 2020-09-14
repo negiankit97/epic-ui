@@ -1,0 +1,55 @@
+.epic__main__search__section {
+  position: sticky;
+  top: 0;
+  height: 20vh;
+  width: 100%;
+  background: rgb(25, 25, 25);
+  @include flex-space-between;
+  align-items: flex-end;
+  &__links {
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__link {
+    margin-right: 1em;
+    a{
+      &:hover{
+        color:  rgba($secondary-color, 1);
+      }
+      .selected {
+        color: white;
+      }
+    }
+    
+  }
+  .epic__main__search {
+    $c: &;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    background: rgba(46, 46, 46, 0.4);
+    padding: 0 0 0 1em;
+    &__title {
+      margin-right: 1em;
+    }
+    &__icon {
+      background: url("/images/search.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 8px 20px;
+    }
+    &__input {
+      border: none;
+      background:none;
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      color: white;
+      &:focus {
+        background: rgba(46, 46, 46, 0.9);
+        outline: transparent;
+        outline-width: 5px;
+        outline-style: ridge;
+      }
+    }
+  }
+}

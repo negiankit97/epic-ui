@@ -1,0 +1,77 @@
+&__free__games{
+    width: 100%;
+    margin: 0 0 2em 0;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    &__wrapper{
+        width: 100%;
+        background: rgb(46, 46, 46);
+        border-radius: 10px;
+        padding: 2em;
+    }
+    &__header{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &__left{
+            display: flex;
+        }
+        &__title{
+            padding-left: 1em;
+        }
+        &__btn{
+            border:0.5px solid rgb(184, 184, 184);
+            font-size: 1em;
+            line-height: 1.8;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: none;
+            color: $secondary-color;
+            outline: transparent;
+            outline-width: 48px;
+            outline-style: dashed;
+            &:hover{
+                cursor: pointer;
+                border: 0.5px solid rgb(240, 240, 240);
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        flex-flow: row wrap;
+        padding:0;
+        &__item{
+            width:calc((100% - 40px) / 3);
+            overflow: hidden;
+            padding: 10px;
+        }
+    }
+    &__article{
+        &__img{
+            max-width: 100%;
+        }
+        &__title{
+            color: white;
+        }
+        &__btn{
+            color: white;
+            background: rgb(43, 111, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            letter-spacing: 0.1rem;
+            line-height: 1.2;
+            outline:transparent;
+            outline-width: 2px;
+            outline-style: dashed;
+            width: 100%;
+            padding: 1.5em 0;
+            &:hover{
+                background: rgb(0, 76, 237);
+                cursor: pointer;
+            }
+        }
+    }
+}

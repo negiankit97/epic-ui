@@ -1,0 +1,37 @@
+&__game__sales{
+    width: 100%;
+    margin: 0 0 4em 0;
+    padding: 0 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+      width: 100%;
+    }
+    &__title {
+      margin: 1em 0 1em 0;
+    }
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2em 0;
+      &__item {
+        @include desktop {
+          width: calc(((100%-5em) / 4));
+          overflow: hidden;
+          margin-right: 1em;
+        }
+        @include small{
+          flex: 1 1 100%;
+        }
+        @include mobile{
+            width: calc(50% - 1em);
+            overflow: hidden;
+        }
+        @import "_card.scss";
+      }
+    }
+  }

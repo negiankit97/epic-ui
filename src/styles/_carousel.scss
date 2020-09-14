@@ -1,0 +1,53 @@
+&__carousel {
+  width: 100%;
+  height: 70vh;
+  margin: 1em 0 5em 0;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__img {
+    @include desktop {
+      flex: 2 1 70%;
+      height: 60vh;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    @include mobile {
+      flex: 1 1 100%;
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  &__article {
+    @include desktop {
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      background: rgb(46, 46, 46);
+      padding: 2em;
+      height: auto;
+      flex: 1 1 30%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    @include mobile {
+      width: 100%;
+      background: rgb(46, 46, 46);
+      padding: 2em;
+      height: auto;
+      flex: 1 1 30%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
